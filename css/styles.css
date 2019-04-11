@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 * {
   margin: 0;
   padding: 0;
@@ -22,30 +23,30 @@ ul {
   clear: both;
 }
 
+.hide {
+  display: none;
+}
+
 .post {
   color: black;
 }
 
 .post__title {
   font-family: "Quicksand", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #12b9b4;
+  margin-top: 15px;
+  text-transform: uppercase;
 }
 
 .post__text {
   padding: 20px 0;
+  font-size: 1.3em;
 }
 
 .post__text + .post__text {
   padding-top: 0;
-}
-
-.select-post__item {
-  border: 1px solid blue;
-  padding: 20px;
-}
-.select-post__item a {
-  color: white;
 }
 
 .galery__img {
@@ -56,21 +57,34 @@ ul {
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 5px #002626;
+  background-color: #119995;
 }
 
 .menu__item {
-  padding: 20px 150px;
+  margin: 0px 130px;
+  padding: 20px;
+  transition: 1s;
+  width: 200px;
+  position: relative;
+  text-align: center;
+}
+.menu__item:hover {
+  background-color: #002626;
+  transition: 1s;
 }
 .menu__item a {
   color: black;
   font-family: "Abel", sans-serif;
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #e5e5e5;
 }
 
 .banner {
   width: 100%;
-  height: 330px;
+  height: 50vh;
   background-image: url("../img/portada.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,8 +95,7 @@ ul {
   padding: 5%;
   width: 50%;
   margin: 30px auto;
-  background-image: url("../img/periodico2.jpg");
-  background-size: contain;
+  background-color: white;
   box-shadow: 2px 2px 10px #00000042;
 }
 
@@ -100,8 +113,9 @@ ul {
   width: 125px;
   height: 125px;
   background-color: #4C5751;
-  box-shadow: 0px 0px 20px #002626;
+  box-shadow: 0px 0px 20px #12b9b4;
   border-radius: 50%;
+  border: 5px solid #61ccc9;
   position: absolute;
   top: 52%;
   background-image: url("../img/logo.png");
@@ -110,12 +124,135 @@ ul {
 }
 
 .wrapper {
-  background-color: white;
+  background-image: url("../img/pagina_bloc.png");
+  background-size: contain;
 }
 
 .header {
   width: 100% !important;
   margin-bottom: 10%;
+}
+
+.snip1336 {
+  float: left;
+}
+
+.snip1336 {
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 4%;
+  width: 25%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #002626;
+}
+
+.snip1336 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1336 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+
+.snip1336 figcaption {
+  width: 100%;
+  background-color: #002626;
+  padding: 25px;
+  position: relative;
+}
+
+.snip1336 figcaption:before {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #002626;
+}
+
+.snip1336 figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+
+.contAnimal {
+  box-shadow: 0px 0px 20px #12b9b4;
+  border-radius: 50%;
+  border: 5px solid #61ccc9;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  width: 90px;
+  height: 90px;
+  opacity: 1;
+  background-color: black;
+}
+
+.snip1336 .profile {
+  position: absolute;
+  bottom: 15%;
+  left: 9px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+}
+
+.snip1336 .jasson {
+  width: 50px;
+  height: 70px;
+  bottom: 4%;
+  left: 16px;
+}
+
+.snip1336 .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+
+.snip1336 h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+
+.snip1336 h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #006565;
+}
+
+.snip1336 p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=styles.css.map */
