@@ -1,0 +1,17 @@
+.post {
+  color: black;
+}
+
+.post__title {
+  font-family: $Quicksand;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.post__text {
+  padding: 20px 0;
+}
+
+.post__text + .post__text {
+  padding-top: 0;
+}

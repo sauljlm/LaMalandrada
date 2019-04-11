@@ -1,0 +1,18 @@
+.contLogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  width: 125px;
+  height: 125px;
+  background-color: #4C5751;
+  box-shadow: 0px 0px 20px $verde;
+  border-radius: 50%;
+  position: absolute;
+  top: 52%;
+  background-image: url('../img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.post {
+  color: black;
+}
+
+.post__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.post__text {
+  padding: 20px 0;
+}
+
+.post__text + .post__text {
+  padding-top: 0;
+}
+
+.select-post__item {
+  border: 1px solid blue;
+  padding: 20px;
+}
+.select-post__item a {
+  color: white;
+}
+
+.galery__img {
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px #002626;
+}
+
+.menu__item {
+  padding: 20px 150px;
+}
+.menu__item a {
+  color: black;
+  font-family: "Abel", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.banner {
+  width: 100%;
+  height: 330px;
+  background-image: url("../img/portada.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.post {
+  padding: 5%;
+  width: 50%;
+  margin: 30px auto;
+  background-image: url("../img/periodico2.jpg");
+  background-size: contain;
+  box-shadow: 2px 2px 10px #00000042;
+}
+
+.first-post {
+  margin-bottom: 0;
+}
+
+.contLogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 125px;
+  height: 125px;
+  background-color: #4C5751;
+  box-shadow: 0px 0px 20px #002626;
+  border-radius: 50%;
+  position: absolute;
+  top: 52%;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  background-color: white;
+}
+
+.header {
+  width: 100% !important;
+  margin-bottom: 10%;
+}
+
+/*# sourceMappingURL=styles.css.map */
