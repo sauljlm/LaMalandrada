@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 5px #002626;
-  background-color: #119995
+  background-color: #119995;
 }
 
 .menu__item {
@@ -13,7 +13,7 @@
   position: relative;
   text-align: center;
   &:hover {
-    background-color: #002626;
+    background-color: #01726F;
     transition: 1s;
   }
   a {

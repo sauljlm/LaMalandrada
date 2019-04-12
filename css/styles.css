@@ -69,7 +69,7 @@ ul {
   text-align: center;
 }
 .menu__item:hover {
-  background-color: #002626;
+  background-color: #01726F;
   transition: 1s;
 }
 .menu__item a {
