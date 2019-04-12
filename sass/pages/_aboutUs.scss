@@ -12,6 +12,9 @@
   text-align: left;
   line-height: 1.4em;
   background-color: $verde;
+  h2 {
+    text-align: center;
+  }
 }
 .snip1336 * {
   -webkit-box-sizing: border-box;
@@ -89,10 +92,14 @@
   left: 16px;
 }
 
+.contFollow {
+  display: flex;
+  justify-content: center;
+}
+
 .snip1336 .follow {
-  margin-right: 4%;
-  border-color: #2980b9;
-  color: #2980b9;
+  border-color: #12b9b4;
+  color: #12b9b4;
 }
 .snip1336 h2 {
   margin: 0 0 5px;

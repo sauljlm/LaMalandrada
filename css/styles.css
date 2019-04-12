@@ -98,6 +98,10 @@ ul {
   background-color: white;
   box-shadow: 2px 2px 10px #00000042;
 }
+.post ul {
+  list-style: circle;
+  margin: 5%;
+}
 
 .first-post {
   margin-bottom: 0;
@@ -147,6 +151,9 @@ ul {
   text-align: left;
   line-height: 1.4em;
   background-color: #002626;
+}
+.snip1336 h2 {
+  text-align: center;
 }
 
 .snip1336 * {
@@ -231,10 +238,14 @@ ul {
   left: 16px;
 }
 
+.contFollow {
+  display: flex;
+  justify-content: center;
+}
+
 .snip1336 .follow {
-  margin-right: 4%;
-  border-color: #2980b9;
-  color: #2980b9;
+  border-color: #12b9b4;
+  color: #12b9b4;
 }
 
 .snip1336 h2 {
