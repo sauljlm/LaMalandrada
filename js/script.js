@@ -22,5 +22,13 @@ btnMiembros.addEventListener('click', (e)=> {
 btnProyecto.addEventListener('click', (e)=> {
   e.preventDefault();
   contPost.classList.toggle('hide');
-  contProject.classList.toggle('hide');  
+  contProject.classList.toggle('hide'); 
+  if (!state) { 
+    btnProyecto.innerHTML = 'blog';
+    state = true;
+  } else {
+    console.log(state);
+    btnProyecto.innerHTML = 'PROYECTO';
+    state = false;
+  } 
 });
