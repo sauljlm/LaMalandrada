@@ -266,4 +266,48 @@ ul {
   opacity: 0.8;
 }
 
+.project {
+  position: relative;
+}
+
+.contVideo {
+  margin-top: 5%;
+  max-width: 50%;
+  float: left;
+}
+
+.contDescription {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5%;
+  float: left;
+  font-size: 1.2rem;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.render1 {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.contDescription2 {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5%;
+  float: left;
+  font-size: 1.2rem;
+}
+
+.contVideo2 {
+  margin-top: 5%;
+  margin-right: 5%;
+  max-width: 45%;
+  float: left;
+}
+
 /*# sourceMappingURL=styles.css.map */
