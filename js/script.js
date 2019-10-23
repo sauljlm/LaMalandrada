@@ -1,34 +1,21 @@
-const btnProyecto = document.querySelector('.proyectos');
-const btnMiembros = document.querySelector('.miembros');
+const btnProyecto = document.querySelector('#btn-proyecto');
+const btnBlog = document.querySelector('#btn-blog');
 const contPost = document.querySelector('.container-posts');
-const contAboutUs = document.querySelector('.cont-About-us');
 const contProject = document.querySelector('.project');
 
-let state = false;
 
-btnMiembros.addEventListener('click', (e)=> {
+btnBlog.addEventListener('click', (e)=> {
   e.preventDefault();
-  contAboutUs.classList.toggle('hide');
-  contPost.classList.toggle('hide');
-  if (!state) { 
-    btnMiembros.innerHTML = 'blog';
-    state = true;
-  } else {
-    console.log(state);
-    btnMiembros.innerHTML = 'Miembros';
-    state = false;
-  }
+  contProject.classList.add('hide');
+  btnBlog.classList.add('menuitem--active');
+  btnProyecto.classList.remove('menuitem--active');
+  contPost.classList.remove('hide');
 });
+
 btnProyecto.addEventListener('click', (e)=> {
   e.preventDefault();
-  contPost.classList.toggle('hide');
-  contProject.classList.toggle('hide'); 
-  if (!state) { 
-    btnProyecto.innerHTML = 'blog';
-    state = true;
-  } else {
-    console.log(state);
-    btnProyecto.innerHTML = 'PROYECTO';
-    state = false;
-  } 
+    contPost.classList.add('hide');
+    btnProyecto.classList.add('menuitem--active');
+    btnBlog.classList.remove('menuitem--active');
+    contProject.classList.remove('hide'); 
 });

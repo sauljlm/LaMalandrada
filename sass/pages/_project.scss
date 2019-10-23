@@ -1,18 +1,39 @@
-.project {
-  position: relative;
+.project__cont {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  div {
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: $breakpoint-md) {
+      max-width: 45%;
+    }
+  }
 }
 
 .contVideo {
   margin-top: 5%;
-  max-width: 50%;
-  float: left;
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.render {
+  max-width: 100%;
 }
 
 .contDescription {
-  width: 50%;
   box-sizing: border-box;
-  padding: 5%;
-  float: left;
+  padding: 5% 0;
   font-size: 1.2rem;
 }
 
@@ -20,25 +41,9 @@
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.render1 {
-  width: 90%;
-  margin-left: 10%;
-}
-
-
-.contDescription2 {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 5%;
-  float: left;
-  font-size: 1.2rem;
-}
-
-.contVideo2 {
-  margin-top: 5%;
-  margin-right: 5%;
-  max-width: 45%;
-  float: left;
+.hide {
+  display: none;
 }
